@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ArrayBootCamp
 	{
-		static String userInput;
 
 		public static void main(String[] args)
 			{
@@ -13,21 +12,23 @@ public class ArrayBootCamp
 
 		private static void printSweets()
 			{
-				String[] favoriteSweets = new String[5];
-
-				favoriteSweets[0] = userInput;
-				favoriteSweets[1] = userInput;
-				favoriteSweets[2] = userInput;
-				favoriteSweets[3] = userInput;
-				favoriteSweets[4] = userInput;
-
-				System.out.println("Tell me your five favorite sweets!");
-
+				System.out.println("How many favorite sweets do you have?");
 				Scanner userInput = new Scanner(System.in);
+				Scanner sweetsInput = new Scanner(System.in);
+				int sweetsNumber = userInput.nextInt();
+				String[] favoriteSweets = new String[sweetsNumber];
 
-				String sweets = userInput.nextLine();
-				
-				
+				for (int i = 0; i < sweetsNumber; i++)
+					{
+
+						System.out.println("Enter a sweet");
+						String sweet = sweetsInput.nextLine();
+
+						favoriteSweets[i] = sweet;
+
+						System.out.println(favoriteSweets[i]);
+
+					}
 
 			}
 
