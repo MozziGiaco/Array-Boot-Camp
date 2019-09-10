@@ -81,6 +81,10 @@ public class ArrayBootCamp
 						System.out.println(randomNumbers[i]);
 
 					}
+				for (int i = 4; i >= 0; i--)
+					{
+						System.out.println(randomNumbers[i]);
+					}
 
 			}
 
