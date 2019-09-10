@@ -70,7 +70,18 @@ public class ArrayBootCamp
 
 		private static void generateRandomNumber()
 			{
-				System.out.println("Please input five random two digit numbers.");
+
+				int[] randomNumbers = new int[5];
+
+				for (int i = 0; i < 5; i++)
+					{
+						int randomNum = (int) (Math.random() * 90 + 10);
+						randomNumbers[i] = randomNum;
+
+						System.out.println(randomNumbers[i]);
+
+					}
+
 			}
 
 	}
